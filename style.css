@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(assets/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    margin: 32px 0 12px 0;
+}
+
+section {
+    padding: 0px 256px;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 200px;
+}
+
+.opening h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.opening p {
+    font-size: 1.2rem;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+}
+
+.education img {
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 48px;
+}
+
+.education > p {
+    margin: 0 24px 0 auto;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills > div {
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.project {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.projects img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    padding: 12px;
+    border-radius: 15px;
+
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 12px;
+}
