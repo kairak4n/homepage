@@ -94,7 +94,7 @@ section > .skills > div{
 
 .projects .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 16px;
 }
 
@@ -112,6 +112,10 @@ section > .skills > div{
     flex-direction: column;
     gap: 12px;
     flex: 1;
+}
+
+.project-info p {
+    font-size: 0.8rem;
 }
 
 .project-info .skills {
@@ -165,4 +169,28 @@ nav a:first-child {
 
 nav a img {
     width: 100%;
+}
+
+@media screen and (max-width: 499px) {
+    html {
+        font-size: 12px;
+    }    
+
+    section {
+        padding: 0px 24px;
+    }
+
+    .education img {
+        margin-right: 24px;
+    }
+
+    .education > p {
+        margin: 0 0 0 auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        padding: 0px 64px;
+    }
 }
